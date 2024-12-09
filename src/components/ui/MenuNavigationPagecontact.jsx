@@ -3,6 +3,7 @@ export default function MenuNavigationPagecontact({ setIsMenuOpen }) {
     const navigation = [
       { name: "Accueil", href: "/home" },
       { name: "Contact", href: "/contact" },
+      { name: "A propos", href: "/about" },
     ];
   
     const scroolToSection = (href) => {
