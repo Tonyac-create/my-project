@@ -5,6 +5,7 @@ export default function MenuNavigation({ setIsMenuOpen }) {
     { name: "Projets", href: "#projects" },
     { name: "Services", href: "#services" },
     { name: "Contact", href: "/contact" },
+    { name: "A propos", href: "/about" },
   ];
 
   const scroolToSection = (href) => {
