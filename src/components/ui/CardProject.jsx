@@ -19,26 +19,40 @@ export default function CardProject() {
       screenshot: "./GOT_Associate.png",
     },
     {
-      name: "Clone Thefork",
+      name: "Dashboard restaurateur",
       description:
         "Application web pour restaurateurs intégrant un système de réservation en ligne directement sur leur site internet. Grâce à une interface intuitive, les professionnels peuvent gérer les réservations, consulter les fiches clients et mettre à jour leur site web en toute simplicité.",
       siteURL: "",
       screenshot: "./construction.png",
     },
+    {
+      name: "Space tourism",
+      description:
+        "Intégration HTML, CSS et Javascript et maquette Figma avec Frontend Mentor",
+      siteURL: "https://space-tourism-seven-ruby.vercel.app/",
+      screenshot: "./Space_screenshot.png",
+    },
+    {
+      name: "To-do App",
+      description:
+        "Intégration HTML, CSS et Javascript et maquette Figma avec Frontend Mentor",
+      siteURL: "https://todo-app-psi-jet.vercel.app/",
+      screenshot: "./Todo_Desktop.png",
+    },
   ];
 
   return (
-    <>
+    <div className="md:flex md:flex-wrap md:gap-6">
       {projects.map((project) => (
         <RevealOnScroll>
           <article
             key={project.name}
-            className="p-2 rounded-md border border-marianBlue shadow-md shadow-marianBlue"
+            className="p-2 rounded-md border border-marianBlue shadow-md shadow-marianBlue md:w-[475px]"
           >
             <img
               src={project.screenshot}
               alt={project.name}
-              className="rounded-md"
+              className="rounded-md w-auto h-auto"
             />
             <h3 className="text-marianBlue text-2xl font-semibold my-2 font-merriweather">
               {project.name}
@@ -53,6 +67,6 @@ export default function CardProject() {
           </article>
         </RevealOnScroll>
       ))}
-    </>
+    </div>
   );
 }
