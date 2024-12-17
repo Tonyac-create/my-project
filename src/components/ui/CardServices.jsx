@@ -52,17 +52,17 @@ export default function CardServices() {
                     </div>
                     <ul className="text-lg my-3">
                         {service.propositions.map((proposition, index) => (
-                            <li key={index} className="flex flex-col gap-2 font-semibold">
-                                <div className="flex items-center gap-2">
+                            <li key={index} className="flex flex-col gap-2">
+                                <div className="flex items-center gap-2 font-semibold">
                                     <img src={caretRight} alt="" className="w-4 h-4" />
                                     {proposition}
                                 </div>
                                 {service.details[index] && service.details[index].length > 0 && (
-                                    <ul className="flex flex-col gap-4 pl-6">
+                                    <ul className="flex flex-col gap-3 pl-6 mb-3">
                                         {service.details[index].map((detail, detailIndex) => (
                                             <div className="flex items-center gap-2">
                                                 <img src={check} alt="" className="w-4 h-4" />
-                                                <li key={detailIndex} className="font-semibold pl-2">
+                                                <li key={detailIndex} className="text-xl pl-2">
                                                     {detail}
                                                 </li>
                                             </div>

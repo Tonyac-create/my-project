@@ -28,14 +28,14 @@ export default function CardProject() {
     {
       name: "Space tourism",
       description:
-        "Intégration HTML, CSS et Javascript et maquette Figma avec Frontend Mentor",
+        "Intégration HTML, CSS, Javascript et maquette Figma pour Frontend Mentor",
       siteURL: "https://space-tourism-seven-ruby.vercel.app/",
       screenshot: "./Space_screenshot.png",
     },
     {
       name: "To-do App",
       description:
-        "Intégration HTML, CSS et Javascript et maquette Figma avec Frontend Mentor",
+        "Intégration React et Tailwind CSS avec maquette Figma pour Frontend Mentor",
       siteURL: "https://todo-app-psi-jet.vercel.app/",
       screenshot: "./Todo_Desktop.png",
     },
