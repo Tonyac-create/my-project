@@ -23,7 +23,7 @@ export default function HeroSection() {
                 <img src="./Desktop_Blue_2.jpg" alt="" className="rounded-3xl shadow-lg shadow-lightBlue animate-slide-down md:animate-slide-right" />
             </div>
             <div className="mt-4 animate-slide-down md:w-1/2 md:animate-slide-right">
-                <h2 className="text-4xl font-bold mb-4 font-merriweather">Votre vision, mon expertise pour des solutions digitales sur-mesure</h2>
+                <h2 className="text-4xl text-marianBlue font-bold mb-4 font-merriweather">Votre vision, mon expertise pour des solutions digitales sur-mesure</h2>
                 <h3 className="text-2xl">Je repense et optimise votre site pour attirer davantage de clients. J'améliore son SEO, ses fonctionnalités et le transforme selon votre vision en un produit digital performant.
                 </h3>
                 <div className="flex justify-center gap-4 mt-14 flex-wrap">

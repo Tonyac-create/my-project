@@ -1,58 +1,22 @@
 import upRight from "../../assets/upRight.svg";
+import projects from "../../lib/card_projects";
 import { RevealOnScroll } from "../RevealScroll";
 {/* <a href='https://fr.pngtree.com/freepng/vector-illustration-background-of--under-construction_3540951.html'>Image PNG de fr.pngtree.com/</a> */ }
 
 export default function CardProject() {
-  const projects = [
-    {
-      name: "Guild Open Tech",
-      description:
-        "Intégration du site vitrine pour l’association Guild Open Tech",
-      siteURL: "https://guildopentech.org/",
-      screenshot: "./Screenshot_GOT_Web.png",
-    },
-    {
-      name: "GOT Associate",
-      description:
-        "Conception d’une application web pour mettre en relation des porteurs de projets et des associés dans l’équipe d’UX Design au sein de l’association Guild Open Tech. Pour la suite du projet, j’intégrerai l’équipe de développeurs.",
-      siteURL: "",
-      screenshot: "./GOT_Associate.png",
-    },
-    {
-      name: "Dashboard restaurateur",
-      description:
-        "Application web pour restaurateurs intégrant un système de réservation en ligne directement sur leur site internet. Grâce à une interface intuitive, les professionnels peuvent gérer les réservations, consulter les fiches clients et mettre à jour leur site web en toute simplicité.",
-      siteURL: "",
-      screenshot: "./construction.png",
-    },
-    {
-      name: "Space tourism",
-      description:
-        "Intégration HTML, CSS, Javascript et maquette Figma pour Frontend Mentor",
-      siteURL: "https://space-tourism-seven-ruby.vercel.app/",
-      screenshot: "./Space_screenshot.png",
-    },
-    {
-      name: "To-do App",
-      description:
-        "Intégration React et Tailwind CSS avec maquette Figma pour Frontend Mentor",
-      siteURL: "https://todo-app-psi-jet.vercel.app/",
-      screenshot: "./Todo_Desktop.png",
-    },
-  ];
-
+  
   return (
     <div className="md:flex md:flex-wrap md:gap-6">
       {projects.map((project) => (
         <RevealOnScroll>
           <article
             key={project.name}
-            className="p-2 rounded-md border border-marianBlue shadow-md shadow-marianBlue md:w-[475px]"
+            className="p-4 rounded-md border border-marianBlue shadow-md shadow-marianBlue md:w-[475px] md:h-[585px]"
           >
             <img
               src={project.screenshot}
               alt={project.name}
-              className="rounded-md w-auto h-auto"
+              className="rounded-md w-[450px] h-[400px] object-cover"
             />
             <h3 className="text-marianBlue text-2xl font-semibold my-2 font-merriweather">
               {project.name}
